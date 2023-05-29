@@ -10,16 +10,18 @@ public class Game {
 
     public void démarrerJeu() {
         demanderNomJoueur();
-
-        while (true) {
-            afficherEtatJeu();
-            if (conditionFinJeu()) {
-                afficherMessageFinJeu();
-                break;
-            }
-
-        }
-
+//
+//            while(!conditionFinJeu()){
+//                afficherEtatJeu();
+//                if (conditionFinJeu()) {
+//                    afficherMessageFinJeu();
+//                    break;
+//                }
+//            }
+        afficherEtatJeu();
+                if (conditionFinJeu()) {
+                    afficherMessageFinJeu();
+                }
         scanner.close();
     }
 
