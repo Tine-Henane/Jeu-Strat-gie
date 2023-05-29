@@ -83,7 +83,7 @@ public class Game {
         System.out.println("État du jeu :");
         // Afficher des informations sur le joueur
         System.out.println("Joueur : " + joueur.getNom());
-        System.out.println("Ressources disponibles : " + joueur.getCoffre());
+        System.out.println("Ressources disponibles : " + joueur.getCoffre().getRessource());
 
     }
 

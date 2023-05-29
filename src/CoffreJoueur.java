@@ -5,6 +5,14 @@ public class CoffreJoueur {
         this.ressource = new Ressource(0, 0, 0, 0, 0); // Initialisation du coffre vide
     }
 
+    public void getR(){
+        ressource.getBois();
+
+    }
+    public Ressource getRessource(){ return ressource;};
+    public void setRessource(Ressource r){
+        this.ressource=r;
+    }
     public void ajouterRessource(Ressource ressource) {
         int boisActuel = this.ressource.getBois() + ressource.getBois();
         int pierreActuelle = this.ressource.getPierre() + ressource.getPierre();
