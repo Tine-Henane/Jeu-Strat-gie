@@ -4,13 +4,16 @@ public abstract class Unite {
     protected Outil outil;
     private int vitesseDeplacement;
     private int coutNourriture;
-
-    public Unite(String nom, String type,Outil outil, int vitesseDeplacement, int coutNourriture) {
+    protected int positionX;
+    protected int positionY;
+    public Unite(String nom, String type,Outil outil, int vitesseDeplacement, int coutNourriture, int positionX, int positionY) {
         this.nom = nom;
         this.type = type;
         this.outil = outil;
         this.vitesseDeplacement = vitesseDeplacement;
         this.coutNourriture = coutNourriture;
+        this.positionX=positionX;
+        this.positionY=positionY;
     }
     public abstract void recupererRessource(Carte carte, CoffreJoueur coffreJoueur, int x, int y);
     public String getNom() {
@@ -27,5 +30,36 @@ public abstract class Unite {
 
     public int getCoutNourriture() {
         return coutNourriture;
+    }
+    public void seDepalcer(Carte carte){
+
+    }
+    public void seDeplacerHaut(Carte carte){
+        if(carte.estPositionValide(this.positionX-1,this.positionY)){
+            carte.getCase(this.positionX,this.positionY).removeUnite(this);
+            this.positionX--;
+            carte.getCase(this.positionX,this.positionY).addUnite(this);
+        }
+    }
+    public void seDeplacerBas(Carte carte){
+        if(carte.estPositionValide(this.positionX+1,this.positionY)){
+            carte.getCase(this.positionX,this.positionY).removeUnite(this);
+            this.positionX++;
+            carte.getCase(this.positionX,this.positionY).addUnite(this);
+        }
+    }
+    public void seDeplacerDroite(Carte carte){
+        if(carte.estPositionValide(this.positionX,this.positionY+1)){
+            carte.getCase(this.positionX,this.positionY).removeUnite(this);
+            this.positionY++;
+            carte.getCase(this.positionX,this.positionY).addUnite(this);
+        }
+    }
+    public void seDeplacerGauche(Carte carte){
+        if(carte.estPositionValide(this.positionX,this.positionY-1)){
+            carte.getCase(this.positionX,this.positionY).removeUnite(this);
+            this.positionY--;
+            carte.getCase(this.positionX,this.positionY).addUnite(this);
+        }
     }
 }
