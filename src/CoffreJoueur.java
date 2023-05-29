@@ -1,5 +1,5 @@
 public class CoffreJoueur {
-    private Ressource ressource;
+    protected Ressource ressource;
 
     public CoffreJoueur() {
         this.ressource = new Ressource(0, 0, 0, 0, 0); // Initialisation du coffre vide

@@ -1,9 +1,9 @@
 public class Carte {
     private static Carte instance;
-    private Case[][] cases;
+    protected Case[][] cases;
     private int largeur;
     private int hauteur;
-    private Ressource[][] ressources;
+    protected Ressource[][] ressources;
     private Carte(int largeur, int hauteur) {
         this.largeur = largeur;
         this.hauteur = hauteur;

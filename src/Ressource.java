@@ -1,9 +1,9 @@
 public class Ressource {
-    private int bois;
-    private int pierre;
-    private int or;
-    private int nourriture;
-    private int quantiteMax;
+    protected int bois;
+    protected int pierre;
+    protected int or;
+    protected int nourriture;
+    protected int quantiteMax;
     public Ressource(int bois, int pierre, int or, int nourriture,int quantiteMax) {
         this.bois = bois;
         this.pierre = pierre;
