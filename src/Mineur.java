@@ -1,6 +1,6 @@
 public class Mineur extends Unite {
 
-    public Mineur(String nom,Outil outil, String type, int vitesseDeplacement, int coutNourriture,int positionX, int positionY) {
+    public Mineur(String nom, String type,Outil outil, int vitesseDeplacement, int coutNourriture,int positionX, int positionY) {
         super(nom, type,outil, vitesseDeplacement, coutNourriture,positionX,positionY);
     }
 
