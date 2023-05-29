@@ -1,4 +1,4 @@
-public abstract class Unite {
+public abstract class Unite extends Component{
     private String nom;
     private String type;
     protected Outil outil;
@@ -31,7 +31,7 @@ public abstract class Unite {
     public int getCoutNourriture() {
         return coutNourriture;
     }
-    public void seDepalcer(Carte carte){
+    public void seDeplacer(Carte carte){
 
     }
     public void seDeplacerHaut(Carte carte){
