@@ -34,4 +34,7 @@ public class CoffreJoueur {
         this.ressource.setOr(orActuel);
         this.ressource.setNourriture(nourritureActuelle);
     }
+    public int getNourritureDisponible() {
+        return this.ressource.getNourriture();
+    }
 }

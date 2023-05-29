@@ -28,4 +28,10 @@ public abstract class Unite {
     public int getCoutNourriture() {
         return coutNourriture;
     }
+    public boolean estNourrie(Joueur joueur) {
+        int nourritureDisponible = joueur.getCoffre().getNourritureDisponible();
+        return nourritureDisponible >= coutNourriture;
+    }
+
+
 }
