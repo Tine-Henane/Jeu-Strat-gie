@@ -13,5 +13,10 @@ public class Paysan extends Unite {
         this.outil = outil;
     }
 
+    @Override
+    public void recuprerRessource() {
+
+    }
+
     // Autres méthodes spécifiques aux paysans
 }

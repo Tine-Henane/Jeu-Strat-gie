@@ -1,4 +1,4 @@
-public class Unite {
+public abstract class Unite {
     private String nom;
     private String type;
     private int vitesseDeplacement;
@@ -10,7 +10,7 @@ public class Unite {
         this.vitesseDeplacement = vitesseDeplacement;
         this.coutNourriture = coutNourriture;
     }
-
+    public abstract void recuprerRessource();
     public String getNom() {
         return nom;
     }

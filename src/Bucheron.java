@@ -14,5 +14,10 @@ public class Bucheron extends Unite {
         this.outil = outil;
     }
 
+    @Override
+    public void recuprerRessource() {
+
+    }
+
     // Autres méthodes spécifiques aux bucherons
 }

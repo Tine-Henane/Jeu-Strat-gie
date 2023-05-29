@@ -14,5 +14,10 @@ public class Mineur extends Unite {
         this.outil = outil;
     }
 
+    @Override
+    public void recuprerRessource() {
+
+    }
+
     // Autres méthodes spécifiques aux mineurs
 }
