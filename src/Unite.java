@@ -33,5 +33,4 @@ public abstract class Unite {
         return nourritureDisponible >= coutNourriture;
     }
 
-
 }

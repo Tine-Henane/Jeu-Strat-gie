@@ -37,4 +37,5 @@ public class CoffreJoueur {
     public int getNourritureDisponible() {
         return this.ressource.getNourriture();
     }
+
 }
