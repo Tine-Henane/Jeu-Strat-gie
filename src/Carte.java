@@ -54,7 +54,7 @@ public class Carte {
         }
     }
 
-    private boolean estPositionValide(int x, int y) {
+    protected boolean estPositionValide(int x, int y) {
         return x >= 0 && x < ressources.length && y >= 0 && y < ressources[0].length;
     }
 }

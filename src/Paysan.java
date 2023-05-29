@@ -1,11 +1,11 @@
 public class Paysan extends Unite {
 
-    public Paysan(String nom, String type,Outil outil, int vitesseDeplacement, int coutNourriture) {
-        super(nom, type,outil, vitesseDeplacement, coutNourriture);
+    public Paysan(String nom, String type,Outil outil, int vitesseDeplacement, int coutNourriture,int positionX, int positionY) {
+        super(nom, type,outil, vitesseDeplacement, coutNourriture,positionX,positionY);
     }
 
     @Override
-    public void recuprerRessource(Carte carte, CoffreJoueur coffreJoueur, int x,int y) {
+    public void recupererRessource(Carte carte, CoffreJoueur coffreJoueur, int x,int y) {
         if(carte.getRessource(x,y).getBois()>0){
             if(coffreJoueur.ressource.nourriture<coffreJoueur.ressource.getquantiteMax()){
                 int maxOutil= this.outil.getEfficacite();
