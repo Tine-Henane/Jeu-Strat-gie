@@ -4,7 +4,7 @@ public class Carte {
     private int largeur;
     private int hauteur;
     protected Ressource[][] ressources;
-    private Carte(int largeur, int hauteur) {
+    protected Carte(int largeur, int hauteur) {
         this.largeur = largeur;
         this.hauteur = hauteur;
         this.ressources = new Ressource[largeur][hauteur];

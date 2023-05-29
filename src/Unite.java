@@ -1,5 +1,5 @@
 public abstract class Unite extends Component{
-    private String nom;
+    protected String nom;
     private String type;
     protected Outil outil;
     private int vitesseDeplacement;

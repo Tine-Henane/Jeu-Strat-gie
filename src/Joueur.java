@@ -4,7 +4,7 @@ import java.util.List;
 public class Joueur {
     private String nom;
     private CoffreJoueur coffre;
-    private List<Unite> unites;
+    protected List<Unite> unites;
     private List<Batiment> batiments;
     private Carte carte;
     public Joueur(String nom) {
