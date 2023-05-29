@@ -12,7 +12,7 @@ public abstract class Unite {
         this.vitesseDeplacement = vitesseDeplacement;
         this.coutNourriture = coutNourriture;
     }
-    public abstract void recuprerRessource(Carte carte, CoffreJoueur coffreJoueur, int x, int y);
+    public abstract void recupererRessource(Carte carte, CoffreJoueur coffreJoueur, int x, int y);
     public String getNom() {
         return nom;
     }

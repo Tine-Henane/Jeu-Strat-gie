@@ -6,7 +6,7 @@ public class Mineur extends Unite {
 
 
     @Override
-    public void recuprerRessource(Carte carte, CoffreJoueur coffreJoueur, int x,int y) {
+    public void recupererRessource(Carte carte, CoffreJoueur coffreJoueur, int x,int y) {
         if(carte.getRessource(x,y).getBois()>0){
             if(coffreJoueur.ressource.or<coffreJoueur.ressource.getquantiteMax()){
                 int maxOutil= this.outil.getEfficacite();
